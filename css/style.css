@@ -11,12 +11,19 @@ body{
     
 }
 .btn-primary{
-    background-color: tomato;
+    background-color: #ff900e;
     border: none;
-    padding: 10px 15px;
+    padding: 15px 20px;
     color: #fff;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 /*shared style end*/
+
+/*header section style start*/
 header{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 20px 240px;
@@ -46,6 +53,9 @@ ul li a{
     font-weight: 500;
     color: #424242;
 }
+/*header section style end*/
+
+/*banner section style start*/
 .banner-content{
     max-width: 600px;
     margin:0 auto;
@@ -58,4 +68,46 @@ ul li a{
 }
 .banner-description{
     color: #727272;
+    
 }
+.banner-section img{
+    width: 100%;
+}
+/*banner section style end*/
+
+/*header area responsive style start*/
+@media screen and (max-width:576px){
+    header{
+        padding: 15px;
+    }
+    nav{
+        flex-direction: column;
+
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+    nav{
+        flex-direction: column;
+}
+.btn-primary{
+    margin-bottom: 10px;
+}
+.banner-description{
+    text-align: justify;
+}
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .banner-description{
+        text-align: justify;
+    }
+    .banner-section img{
+        width: 100%;
+    }
+}
+/* header area responsive style end*/
