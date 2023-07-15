@@ -74,7 +74,39 @@ ul li a{
     width: 100%;
 }
 /*banner section style end*/
-
+/*main area style start*/
+main{
+    padding: 20px 200px;
+}
+.feature-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.feature-image img{
+    max-width: 200px;
+}
+.feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem}
+.feature-description{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.feature-title{
+    color: #727272;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.feature-title1{
+    color: #131313;
+}
+.feature-title2{
+    color: #ff900e;
+    font-weight: 700;
+}
+/*main area style end*/
 /*header area responsive style start*/
 @media screen and (max-width:576px){
     header{
