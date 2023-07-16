@@ -174,6 +174,43 @@ main{
 }
 /*cart section style end*/
 
+/*skill container style start*/
+.skill-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 50px;
+}
+.skill-cart{
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 35px;
+}
+.skill-title{
+    border-left: 2px solid #ff900e;
+    padding-left: 12px;
+}
+.badge {
+    background-color: #ff900e;
+    max-width: 250px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 8px;
+    position: relative;
+    top: -90px;
+}
+.badge h2{
+    margin: 0px 0px;
+    font-size: 3rem;
+}
+.badge p{
+    margin: 10px 0px;
+}
+/*skill container style end*/
+
 /* responsive style start*/
 @media screen and (max-width:576px){
     header{
@@ -210,7 +247,27 @@ main{
     padding: 10px;
     align-items: center;
    }
-}
+   .skill-container{
+    flex-direction: column;
+   }
+   /* .skill-content{ */
+    /* max-width: 300px;
+    margin: auto;
+   }*/
+   .skill-image img{
+    max-width: 90%;
+    margin: auto;
+   }
+   .skill-image{
+    text-align:center;
+   }
+   .badge{
+    left: 150px;
+   }
+   .skills-index{
+    padding-left: 15px;
+   }
+} 
 @media screen and (min-width: 576px) and (max-width: 768px){
     header{
         padding: 20px 40px;
@@ -241,6 +298,22 @@ main{
     gap: 5px;
     padding: 10px;
     align-items: center;
+   }
+   .skill-container{
+    flex-direction: column;
+   }
+   .skill-image{
+    text-align:center;
+   }
+   .skill-image img{
+    max-width: 90%;
+    margin: auto;
+   }
+   .badge{
+    left: 150px;
+   }
+   .skills-index{
+    padding-left: 15px;
    }
 }
 @media screen and (min-width:768px) and (max-width:992px){
@@ -277,6 +350,25 @@ main{
     gap: 5px;
     padding: 10px;
     align-items: center;
+   }
+   .skill-container{
+    flex-direction: column;
+   }
+   .skill-image{
+    text-align:center;
+   }
+   .skill-image img{
+    max-width: 90%;
+    margin: auto;
+   }
+   .badge{
+    left: 150px;
+   }
+   .skills-index{
+    padding-left: 15px;
+   }
+   .feature-details{
+    text-align: justify;
    }
 }
 /*  responsive style end*/
