@@ -21,6 +21,9 @@ body{
     cursor: pointer;
     margin-bottom: 10px;
 }
+.discription{
+    color: #727272;
+}
 /*shared style end*/
 
 /*header section style start*/
@@ -28,7 +31,7 @@ header{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 20px 240px;
 }
-.nav-title{
+.section-title{
     font-size: 2rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
@@ -66,33 +69,33 @@ ul li a{
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color: #727272;
-    
-}
 .banner-section img{
     width: 100%;
 }
 /*banner section style end*/
+
 /*main area style start*/
 main{
-    padding: 20px 200px;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 .feature-section{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 20px 150px;
 }
 .feature-image img{
     max-width: 200px;
+    box-shadow: -1px -1px 3px gray;
 }
 .feature-image{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem}
 .feature-description{
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 60px;
+    padding-right: 40px;
 }
 .feature-title{
     color: #727272;
@@ -107,31 +110,54 @@ main{
     font-weight: 700;
 }
 /*main area style end*/
+
+
 /*header area responsive style start*/
 @media screen and (max-width:576px){
     header{
         padding: 15px;
     }
-    nav{
+    nav, .feature-section
+    {
         flex-direction: column;
 
     }
     .btn-primary{
         margin-bottom: 10px;
     }
+    .feature-image{
+         grid-template-columns: 1fr;
+    }
+    .feature-image img{
+        max-width: 100%;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 768px){
-    nav{
+    header{
+        padding: 20px 40px;
+    }
+    .feature-description{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+   }
+    .nav-title{
+        font-size: 1.1rem;
+    }
+    
+    nav, .feature-section 
+    {
         flex-direction: column;
 }
 .btn-primary{
     margin-bottom: 10px;
 }
-.banner-description{
-    text-align: justify;
-}
+
 }
 @media screen and (min-width:768px) and (max-width:992px){
+    header{
+        padding: 20px 40px;
+    }
     .btn-primary{
         margin-bottom: 10px;
     }
@@ -140,6 +166,17 @@ main{
     }
     .banner-section img{
         width: 100%;
+    }
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-image{
+        gap: 40px;
+    }
+    .feature-description{
+        padding: 5px;
+        max-width: 60%;
+        margin: auto;
     }
 }
 /* header area responsive style end*/
