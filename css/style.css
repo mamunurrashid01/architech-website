@@ -217,10 +217,13 @@ main{
     header{
         padding: 15px;
     }
-    nav, .feature-section 
+    nav, .feature-section
     {
         flex-direction: column;
 
+    }
+    .feature-section {
+        padding: 10px 30px;
     }
     .btn-primary{
         margin-bottom: 10px;
@@ -229,7 +232,10 @@ main{
          grid-template-columns: 1fr;
     }
     .feature-image img{
-        max-width: 100%;
+        max-width:100%;
+    }
+    main{
+        width: 100%;
     }
     .cart-discription{
         text-align: center;
@@ -263,7 +269,8 @@ main{
     text-align:center;
    }
    .badge{
-    left: 150px;
+    width: 70%;
+    margin: auto;
    }
    .skills-index{
     padding-left: 15px;
